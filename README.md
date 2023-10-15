@@ -1,36 +1,30 @@
 # Assignment 5
+CustomArrayList Implementation - Assignment #5
 
- 
-This assignment will focus on algorithms, specifically around coding your own implementation of the ArrayList data structure.
+This GitHub repository contains a Java implementation of the ArrayList data structure from scratch as part of Assignment #5. The focus of this assignment is on algorithms and coding a custom ArrayList, without referring to Java's built-in ArrayList source code.
 
-Note: No cheating and looking at Java’s source code to see how they solved it!
+Assignment Overview:
 
-Your task is to implement all the abstract methods in the CustomList interface via the CustomArrayList class.
+In this assignment, we implement all the abstract methods defined in the CustomList interface via the CustomArrayList class. These methods include adding elements to the list. An essential feature is that the backing Object array doubles in size whenever it becomes full. For example, when adding the 11th element, the array grows from 10 to 20 elements in size, and so on.
 
-While you’re implementing code inside of the CustomArrayList class, you should test it inside of a CustomListApplication class with a main method.
+The assignment also includes a testing component. We've created a CustomListApplication class with a main method for testing the CustomArrayList class. You are encouraged to add more than 10 elements to your custom list and validate the functionality by ensuring that all the elements you've inserted exist in your data structure.
 
-Please make sure you try adding more than 10 elements to your CustomList.
+Key Features:
+
+Custom implementation of the ArrayList data structure.
+Dynamic resizing of the backing array to accommodate more elements.
+A test application for verifying the functionality.
+Usage:
+
+To use this custom ArrayList implementation, follow these steps:
+
+Clone or download the repository.
+Compile the code using your preferred Java development environment or command line.
+Run the CustomListApplication class with the main method to test the functionality.
+Customize the code as needed for your specific use case.
+Contributing:
+
+We welcome contributions to this project. If you have ideas for improvements or additional features, feel free to submit pull requests.
 
 
-How to grow the backing Object array
-When adding a new element, if the backing Object array is full, you should have the array double in size.
-
-So, when adding the 11th element, the backing Object array will grow from 10 to 20 elements in size.
-
-When adding the 21st element, it should grow from 20 to 40 elements in size, etc.
-
-For this assignment, we won’t worry about the ability to remove elements from our array.
-
-
-Testing your code
-The purpose of the assignment is to add code to the CustomArrayList class, but in order to make sure that your code works, you'll need to test it.
-
-I'd recommend testing it by instantiating your class and inserting elements into it.
-
-CustomList<String> myCustomList = new CustomArrayList<>();
-myCustomList.add("element 1"); // and continue to add another 10, 20 or 40 more elements
-
-// then you should validate that all the elements you've inserted actually exist in your data structure
-for (int i=0; i<myCustomList.getSize(); i++) {
-    System.out.println(myCustomList.get(i));
-}
+![image](https://github.com/TjacksWebDev/Assignment5/assets/143833425/5b8c2f22-653f-44b5-9153-a11426007ce5)
